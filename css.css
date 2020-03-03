@@ -195,7 +195,7 @@ p{
 }
 
 div{
-  display: none;
+  transform-origin: bottom;
 }
 
 .whatsapp{

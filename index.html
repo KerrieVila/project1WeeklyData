@@ -113,13 +113,21 @@
                    }, 9000);
 
                //bars grow and apps move
-               setTimeout(function(){
-                     $("div").animate({
-                          opacity: "show"
-                        }, {
-                          duration: 4500,
-                        });
-                   }, 9500);
+              TweenMax.set("div", {scaleY: 0, scaleX:.97})
+              TweenMax.to(".whatsapp", {scaleY: 1, duration: 3.5, delay:9.6})
+              TweenMax.to(".fb", {scaleY: 1, duration: 3.5, delay:9.6})
+              TweenMax.to(".instagram", {scaleY: 1, duration: 3.15, delay:9.5})
+              TweenMax.to(".sc", {scaleY: 1, duration: 3.15, delay:9.7})
+              TweenMax.to(".twitter", {scaleY: 1, duration: 3.15, delay:9.5})
+
+
+               // setTimeout(function(){
+               //       $("div").animate({
+               //            opacity: "show"
+               //          }, {
+               //            duration: 4500,
+               //          });
+               //     }, 9500);
 
 
                TweenMax.to("#sc_nn", 3, {y: 670.53, delay: 9.75});
