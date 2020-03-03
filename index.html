@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Weekly Usage</title>
+    </head>
+    <body>
+      <figure>
+        <h1 id="title" style="display: none;">Weekly Usage of Social Apps in South Africa 2018</h1>
+        <p id="axis" style="display: none;">Percent (%) who use app at least once a week</p>
+        <div class="whatsapp"></div>
+        <div class="fb"></div>
+        <div class="instagram"></div>
+        <div class="sc"></div>
+        <div class="twitter"></div>
+        <h2 id="lb_wa" style="display: none;">88</h2>
+        <h2 id="lb_fb" style="display: none;">80</h2>
+        <h2 id="lb_insta" style="display: none;">41</h2>
+        <h2 id="lb_sc"  style="display: none;">11</h2>
+        <h2 id="lb_twitter" style="display: none;">34</h2>
+        <img id="as" src="App-Store.png" alt="">
+        <img id="as_bw" src="App-Store-BW.png" alt="" style="display: none;">
+        <img id="calendar" src="Calendar.png" alt="">
+        <img id="calendar_bw" src="Calendar-BW.png" alt="" style="display: none;">
+        <img id="camera" src="Camera.png" alt="">
+        <img id="camera_bw" src="Camera-BW.png" alt="" style="display: none;">
+        <img id="clock" src="Clock.png" alt="">
+        <img id="clock_bw" src="Clock-BW.png" alt="" style="display: none;">
+        <img id="fb_nn" src="Facebook-noname.png" alt="">
+        <img id="fb" src="Facebook.png" alt="">
+        <img id="gc" src="Game-Center.png" alt="">
+        <img id="gc_bw" src="Game-Center-BW.png" alt="" style="display: none;">
+        <img id="health" src="Health.png" alt="">
+        <img id="health_bw" src="Health-BW.png" alt="" style="display: none;">
+        <img id="instagram" src="Instagram.png" alt="" >
+        <img id="itunes" src="Itunes.png" alt="">
+        <img id="itunes_bw" src="Itunes-BW.png" alt="" style="display: none;">
+        <img id="mail" src="Mail.png" alt="">
+        <img id="mail_bw" src="Mail-BW.png" alt="" style="display: none;">
+        <img id="maps" src="Maps.png" alt="">
+        <img id="maps_bw" src="Maps-BW.png" alt="" style="display: none;">
+        <img id="music" src="Music.png" alt="">
+        <img id="music_bw" src="Music-BW.png" alt="" style="display: none;">
+        <img id="notes" src="notes.png" alt="">
+        <img id="notes_bw" src="Notes-BW.png" alt="" style="display: none;">
+        <img id="phone" src="Phone.png" alt="" >
+        <img id="phone_bw" src="Phone-BW.png" alt="" style="display: none;">
+        <img id="photos" src="Photos.png" alt="">
+        <img id="photos_bw" src="Photos-BW.png" alt="" style="display: none;">
+        <img id="reminders" src="reminders.png" alt="">
+        <img id="reminders_bw" src="reminders-BW.png" alt="" style="display: none;">
+        <img id="safari" src="Safari.png" alt="">
+        <img id="safari_bw" src="Safari-BW.png" alt="" style="display: none;">
+        <img id="settings" src="Settings.png" alt="">
+        <img id="settings_bw" src="Settings-BW.png" alt="" style="display: none;">
+        <img id="sc_nn" src="Snapchat-noname.png" alt="">
+        <img id="sc" src="Snapchat.png" alt="">
+        <img id="stocks" src="Stocks.png" alt="">
+        <img id="stocks_bw" src="Stocks-BW.png" alt="" style="display: none;">
+        <img id="twitter_nn" src="Twitter-noname.png" alt="">
+        <img id="twitter" src="Twitter.png" alt="">
+        <img id="whatsapp" src="Whatsapp.png" alt="">
+        <img id="weather" src="Weather.png" alt="">
+        <img id="weather_bw" src="Weather-BW.png" alt="" style="display: none;">
+
+  </figure>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+             <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
+
+             <script>
+
+
+
+
+             $(document).ready(function(){
+
+               var bw = $("[id$=_bw]")
+
+
+               //turn gray
+
+               setTimeout(function(){
+                    $(bw).fadeIn(700);
+                  }, 1500);
+
+
+               //disappear
+              setTimeout(function(){
+                    $("img").not("#instagram, #sc_nn, #fb_nn, #twitter_nn, #whatsapp").fadeOut(1000);
+                  }, 3000);
+
+               //move to bottom
+
+               TweenMax.to("#sc_nn", 5, {x: 12.19, y: 704.53, delay: 4.5});
+               TweenMax.to("#fb_nn", 5, {x: 97.04, y: 871.47, delay: 4.5});
+               TweenMax.to("#twitter_nn", 5, {x: 40.48, y: 537.6, delay: 4.5});
+               TweenMax.to("#instagram", 5, {x: -71.51 , delay: 4.5});
+               TweenMax.to("#whatsapp", 5, {x: -14.94, delay: 4.5});
+
+
+               //headline and axis appear
+               setTimeout(function(){
+                     $("h1").fadeIn(3000);
+                   }, 9000);
+
+               //bars grow and apps move
+               setTimeout(function(){
+                     $("div").animate({
+                          opacity: "show"
+                        }, {
+                          duration: 4500,
+                        });
+                   }, 9500);
+
+
+               TweenMax.to("#sc_nn", 3, {y: 670.53, delay: 9.75});
+               TweenMax.to("#fb_nn", 3, {y: 89.01, delay: 9.75});
+               TweenMax.to("#twitter_nn", 3, {y: 260.66, delay: 9.75});
+               TweenMax.to("#instagram", 3, {y: -354.26, delay: 9.75});
+               TweenMax.to("#whatsapp", 3, {y: -871.51, delay: 9.75});
+
+
+               //labels appear
+               setTimeout(function(){
+                     $("p").fadeIn(3000);
+                   }, 13500);
+
+               setTimeout(function(){
+                     $("h2").fadeIn(1000);
+                   }, 13500);
+
+
+             });
+
+            </script>
+    </body>
+</html>

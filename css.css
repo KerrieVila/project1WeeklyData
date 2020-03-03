@@ -1,0 +1,251 @@
+/* ALWAYS USE OUR RESET*/
+*{margin: 0;padding: 0;box-sizing:border-box;}
+
+/* First! Establish The Stage Dimensions */
+figure{
+  width: 600px;
+  height: 1300px;
+  overflow: hidden;
+  background-image: url("Background.png");
+  border: 2px solid black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Remember! Declare the parent/child positioning trick */
+img {
+  width: 95px;
+  height: auto;
+  position: absolute;
+}
+
+h1, h2, p {
+  position: absolute;
+  font-family: "Helvetica Neue";
+  text-align: center;
+}
+
+h1{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+p{
+  font-size: 15px;
+  font-weight: 100;
+}
+
+#lb_wa{
+  top:1213.15px;
+  left: 58.66px;
+}
+
+#lb_fb{
+  top:1213.15px;
+  left: 170.64px;
+}
+
+#lb_insta{
+  top:1213.15px;
+  left: 281.02px;
+}
+
+#lb_sc{
+  color: #68686C;
+  top:1213.15px;
+  left: 506.59px;
+}
+
+#lb_twitter{
+  top:1213.15px;
+  left: 393.01px;
+}
+
+#title{
+  top:108.78px;
+  left: 53.86px;
+}
+
+#axis{
+  top:1261px;
+  left: 150.38px;
+}
+
+#phone, #phone_bw {
+  top:121.6px;
+  left: 42.67px;
+}
+
+#calendar, #calendar_bw {
+  top:121.6px;
+  left: 182.93px;
+}
+
+#photos, #photos_bw {
+  top:121.6px;
+  left: 323.2px;
+}
+
+#camera, #camera_bw {
+  top:121.6px;
+  left: 463.47px;
+}
+
+#fb, #fb_nn {
+  top:288.53px;
+  left: 42.67px;
+}
+
+
+#weather, #weather_bw {
+  top:288.53px;
+  left: 182.93px;
+}
+
+#clock, #clock_bw {
+  top:288.53px;
+  left: 323.2px;
+}
+
+#gc, #gc_bw {
+  top:288.53px;
+  left: 463.47px;
+}
+
+#maps, #maps_bw {
+  top:455.47px;
+  left: 42.67px;
+}
+
+#itunes, #itunes_bw {
+  top:455.47px;
+  left: 182.93px;
+}
+
+#as, #as_bw {
+  top:455.47px;
+  left: 323.2px;
+}
+
+#sc, #sc_nn {
+  top:455.47px;
+  left: 463.47px;
+}
+
+#music, #music_bw {
+  top:622.4px;
+  left: 42.67px;
+}
+
+#settings, #settings_bw {
+  top:622.4px;
+  left: 182.93px;
+}
+
+#twitter, #twitter_nn {
+  top:622.4px;
+  left: 323.2px;
+}
+
+#stocks, #stocks_bw {
+  top:622.4px;
+  left: 463.47px;
+}
+
+#health, #health_bw {
+  top:789.33px;
+  left: 42.67px;
+}
+
+#notes, #notes_bw {
+  top:789.33px;
+  left: 182.93px;
+}
+
+#reminders, #reminders_bw {
+  top:789.33px;
+  left: 323.2px;
+}
+
+#whatsapp, #whatsapp {
+  top:1160px;
+  left: 42.67px;
+}
+
+#safari, #safari_bw {
+  top:1160px;
+  left: 182.93px;
+}
+
+#instagram {
+  top:1160px;
+  left: 323.2px;
+}
+
+#mail, #mail_bw {
+  top:1160px;
+  left: 463.47px;
+}
+
+div{
+  display: none;
+}
+
+.whatsapp{
+  position: absolute;
+  width: 97.58px;
+  height: 969.02px;
+  background: linear-gradient(0deg, #27D145, #27D145);
+  border-radius: 21.33px;
+  top:288.49px;
+  left: 26.73px;
+
+}
+
+.fb{
+  position: absolute;
+  width: 97.58px;
+  height: 880.93px;
+  background: #3C5A99;
+  border-radius: 21.33px;
+  top:377.54px;
+  left: 138.71px;
+}
+
+.instagram{
+  position: absolute;
+  width: 97.58px;
+  height: 451.48px;
+  background: linear-gradient(0deg, #E33368, #E33368);
+  border-radius: 21.33px;
+  top:805.74px;
+  left: 250.69px;
+}
+
+.sc{
+  position: absolute;
+  width: 97.58px;
+  height: 121.13px;
+  background: linear-gradient(0deg, #FFFC00, #FFFC00);
+  border-radius: 21.33px;
+  top:1136.36px;
+  left:474.66px;
+
+}
+
+.twitter{
+  position: absolute;
+  width: 97.58px;
+  height: 374.4px;
+  background: linear-gradient(0deg, #165EC2, #165EC2);
+  border-radius: 21.33px;
+  top:883.06px;
+  left: 362.68px;
+}
